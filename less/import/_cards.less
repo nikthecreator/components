@@ -1,0 +1,36 @@
+.container {
+    width: 1140px;
+    height: 300px;
+    margin: auto;
+    background-color: @deepBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards {
+    width: 800px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapp-client, .wrapp-work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+}
+.client, .work {
+    width: 280px;
+    height: 100px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 7px 7px 7px rgba(13, 23, 38, 0.56);
+    transition: all 0.2s;
+    &:hover {
+        background-color: @hoverLink;
+        box-shadow: 14px 14px 10px rgba(13, 23, 38, 0.56);
+        margin-bottom: 14px;  
+    }
+}
